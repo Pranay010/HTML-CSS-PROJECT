@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="styletag.css">
+    <title>www.pranay.com</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="head">Style tag</h1>
+    </header>
+
+    <main>
+        <section>
+            <p>
+                The &lt;style&gt; tag in HTML is used to define CSS (Cascading Style Sheets) rules directly within an
+                HTML document. It allows you to apply custom styles to specific HTML elements without the need for an
+                external CSS file. The styles defined inside the &lt;style&gt; tag apply only to the HTML document in
+                which it is placed.
+            </p>
+
+            <h2>Usage:</h2>
+            <div id="diversion1">
+                <div id="codeexpalin1">
+                    <div id="content1">
+                        <h3 id="h3tag">Code for explination:</h3>
+                    </div>
+
+                    <code>
+                        &lt;!DOCTYPE html&gt;<br>
+                        &lt;html&gt;<br>
+                        &lt;head&gt;<br>
+                            &lt;title&gt;Style Tag Example&lt;/title&gt;<br>
+                            &lt;style&gt;<br>
+                                /* CSS rules go here */<br>
+                                body {<br>
+                                    font-family: Arial, sans-serif;<br>
+                                }<br>
+                                h1 {<br>
+                                    color: blue;<br>
+                                }<br>
+                                p {<br>
+                                    font-size: 16px;<br>
+                                }<br>
+                            &lt;/style&gt;<br>
+                        &lt;/head&gt;<br>
+                        &lt;body&gt;<br>
+                            &lt;h1&gt;Welcome to my website&lt;/h1&gt;<br>
+                            &lt;p&gt;This is a paragraph with custom styles.&lt;/p&gt;<br>
+                        &lt;/body&gt;<br>
+                        &lt;/html&gt;<br>
+                    </code>
+                </div>
+                <!-- --------------------------------------------------------------------------------------------------- -->
+                <div id="codeexpalin1">
+                    <div id="content1">
+                        <h3 id="h3tag">This is result:</h3>
+                    </div>
+                    <code>
+                        <!DOCTYPE html>
+                        <html>
+                        <head>
+                            <title>Style Tag Example</title>
+                            <style>
+                                /* CSS rules go here */
+                                body {
+                                    font-family: Arial, sans-serif;
+                                }
+                                h1 {
+                                    color: blue;
+                                }
+                                p {
+                                    font-size: 16px;
+                                }
+                            </style>
+                        </head>
+                        <body>
+                            <h1>Welcome to my website</h1>
+                            <p>This is a paragraph with custom styles.</p>
+                        </body>
+                        </html>
+
+                    </code>
+                </div>
+
+            </div>
+            <!-- --------------------------------------------------------------------------------------------------- -->
+
+            <h2>Explanation:</h2>
+            <strong>In the above example, we have an HTML document with a &lt;style&gt; tag inside the &lt;head&gt;
+                section. The &lt;style&gt; tag is used to define custom CSS rules that apply to the elements in the HTML
+                document.</strong><br><br>
+            <strong>Inside the &lt;style&gt; tag, we define three CSS rules:</strong><br><br>
+            
+            <p><strong>1.</strong>
+            The body rule sets the font-family property to Arial (or sans-serif if Arial is not available) for all
+                text within the &lt;body&gt; element.</p>
+            <p><strong>2.</strong>
+            The h1 rule sets the color property to blue for all &lt;h1&gt; elements in the document.</p>
+            <p><strong>3.</strong>
+            The p rule sets the font-size property to 16 pixels for all &lt;p&gt; (paragraph) elements in the
+                document.</p><br>
+
+            <strong>By using the &lt;style&gt; tag, we can directly embed CSS rules in the HTML document, providing a convenient way to apply simple styles without the need for an external CSS file.</strong><br><br>
+            <strong>Uses of the &lt;style&gt; tag:</strong><br><br>
+
+            <p><strong>1. Simple Styling:</strong> The &lt;style&gt; tag is useful for applying quick and straightforward styles to individual HTML documents without the need to create and link an external CSS file.</p>
+            <p><strong>2. Specific Page Styling:</strong>When you want to style a single HTML document differently from the rest of the website, you can use the &lt;style&gt; tag to define custom styles for that specific page.</p>
+
+            <p><strong>3. Responsive Styles:</strong> You can use the &lt;style&gt; tag in combination with media queries to apply responsive styles that adapt to different screen sizes.</p>
+
+            <p><strong>4. Quick Experiments:</strong>The &lt;style&gt; tag is handy for testing and experimenting with CSS rules before adding them to an external CSS file.</p><br>
+
+            <p>However, for larger projects or websites with multiple pages, it is more efficient and organized to use an external CSS file. External stylesheets can be reused across multiple pages, reducing duplication of code and making maintenance easier.</p><br>
+
+
+            <strong> To use external CSS, you can create a separate .css file and link it to your HTML documents using the &lt;link&gt; tag within the &lt;head&gt; section.</strong>
+
+
+            <div id="diversion2">
+                <div id="codeexpalin2">
+                    <div id="content2">
+                        <h3 id="h3tag">Code for explination:</h3>
+                    </div>
+                    <code>
+                        &lt;!DOCTYPE html&gt;<br>
+                        &lt;html&gt;<br>
+                        &lt;head&gt;<br>
+                            &lt;title&gt;External CSS Example&lt;/title&gt;<br>
+                            &lt;link rel="stylesheet" href="styles.css"&gt;<br>
+                        &lt;/head&gt;<br>
+                        &lt;body&gt;<br>
+                            &lt;!-- Content goes here --&gt;<br>
+                        &lt;/body&gt;<br>
+                        &lt;/html&gt;<br>
+                    </code>
+                </div>
+
+                <!-- --------------------------------------------------------------------------------------------------- -->
+
+                <!-- <div id="codeexpalin2">
+                    <div id="content2">
+                        <h3 id="h3tag">This is result:</h3>
+                    </div>
+                    <code>
+                        <!DOCTYPE html>
+                        <html>
+                        <head>
+                            <title>External CSS Example</title>
+                            <link rel="stylesheet" href="styles.css">
+                        </head>
+                        <body>
+                            Content goes here
+                        </body>
+                        </html>
+
+                    </code>
+                </div> -->
+            </div><br>
+
+            <p>In this example, the styles.css file contains all the CSS rules that apply to the entire website, keeping the HTML documents clean and focused on the content.</p><br><br>
+
+
+        </section>
+        <h2 id="h2tag">if  you want to learn more html tag <a href="../index.html"><button class="button" ><span>click</span></button></a></h2> 
+
+    </main>
+
+    <footer>
+        &copy; 2021 www.pranay.com</footer>
+    </footer>
+
+</body>
+
+</html>

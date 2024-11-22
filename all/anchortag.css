@@ -1,0 +1,157 @@
+* {
+    padding: 0px;
+    margin: 0px;
+
+}
+
+#head {
+    background-color: #3498db;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    text-transform: capitalize;
+    border: solid;
+    margin: 2px;
+}
+
+
+
+#content1 {
+    height: 30px;
+    width: 550px;
+    background-color: rgb(141, 135, 135);
+    border-radius: 10px 10px 0px 0px;
+    text-align: center;
+    text-transform: capitalize;
+    color: rgb(225, 37, 37);
+}
+
+#content2 {
+    text-transform: capitalize;
+
+}
+
+#content3 {
+    height: 30px;
+    width: 550px;
+    background-color: rgb(141, 135, 135);
+    border-radius: 10px 10px 0px 0px;
+    text-align: center;
+    text-transform: capitalize;
+    color: rgb(225, 37, 37);
+}
+
+#content4 {
+    text-transform: capitalize;
+
+}
+
+.codeexpalin1 {
+    height: 200px;
+    width: 550px;
+    background-color: black;
+    color: whitesmoke;
+    border-radius: 10px;
+}
+
+.codeexpalin2 {
+    height: 220px;
+    width: 550px;
+    background-color: black;
+    color: whitesmoke;
+    border-radius: 10px;
+}
+
+#diversion1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 2px;
+    position: initial;
+
+}
+
+#diversion2 {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 2px;
+    position: initial;
+}
+
+p {
+    word-wrap: normal;
+}
+
+section {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    height: 100vh;
+    width: auto;
+
+}
+
+main {
+    display: block;
+}
+
+
+#myfooter {
+    height: 20px;
+    width: auto;
+    text-align: center;
+    background-color: #f1c40f;
+    border: solid;
+    margin: 2px;
+    text-transform: capitalize;
+    padding: 2px;
+    position:static;
+    display: block;
+    
+
+}
+
+#h2tag{
+    text-align: center;
+    text-transform: capitalize;
+ }
+
+.button {
+    border-radius: 4px;
+    background-color: #410ad8;;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px;
+    width: 100px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="formtag.css">
+    <title>www.pranay.com</title>
+</head>
+
+<body>
+
+    <header>
+        <h1 id="head">Form tag</h1>
+    </header>
+
+    <main>
+        <section>
+            <div>
+                <h2>
+                    Let's dive deeper into the theory and code of using the `&lt;form&gt;` tag and explore some related
+                    form elements.
+                </h2><br>
+
+                <strong>1.`&lt;form&gt;` Tag (Theory):</strong>
+                <p> The `&lt;form&gt;` tag in HTML is used to create
+                    interactive web forms that collect data from users. It acts as a container for various form
+                    elements, such as input fields, buttons, dropdowns, checkboxes, etc.
+                    The `action` attribute of the `&lt;form&gt;` tag specifies the URL where the form data will be
+                    submitted upon submission. It can be a serverside script or an API endpoint that processes the form
+                    data.
+                    The `method` attribute of the `&lt;form&gt;` tag defines the HTTP method to be used for submitting
+                    the form data. The most common methods are "GET" and "POST."
+                </p><br>
+
+
+                <strong>2. `&lt;input&gt;` Tag (Theory):</strong>
+                <p>
+                    The `&lt;input&gt;` tag is a versatile form element that creates various types of input fields, such
+                    as text fields, checkboxes, radio buttons, submit buttons, etc.
+                    The `type` attribute of the `&lt;input&gt;` tag determines the type of input field to be created.
+                    Common values for `type` include "text," "email," "password," "checkbox," "radio," and "submit."
+                </p><br>
+
+
+                <strong> 3. `&lt;textarea&gt;` Tag (Theory):</strong>
+                <p>
+                    The `&lt;textarea&gt;` tag is used to create a multiline text input field, allowing users to enter
+                    larger blocks of text, such as comments or messages.
+                    Unlike the `&lt;input&gt;` tag, which creates singleline text fields, the `&lt;textarea&gt;` tag
+                    includes a closing tag to specify the default text content and a specific number of rows and columns
+                    for display.
+                </p><br>
+
+
+                <strong> 4. `&lt;button&gt;` Tag (Theory):</strong>
+                <p>
+                    The `&lt;button&gt;` tag creates a clickable button within the form, which can trigger actions like
+                    form submission or JavaScript functions.
+                    The `type` attribute of the `&lt;button&gt;` tag specifies its behavior. If `type="submit"`, the
+                    button will submit the form when clicked. If `type="button"`, it acts as a regular button.
+
+                </p><br>
+
+                <h3>Code Example:</h3>
+
+                <div id="diversion1">
+                    <div id="codeexpalin1">
+                        <div id="content1">
+                            <h3 class="h3tag">Code for explination:</h3>
+                        </div>
+
+                        <code>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;title&gt;Form Example&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;form action="/submit_form.php" method="post"&gt;<br>
+                            &lt;label for="name"&gt;Name:&lt;/label&gt;<br>
+                            &lt;input type="text" id="name" name="name" required&gt;<br>
+                            &lt;br&gt;<br>
+                            &lt;label for="email"&gt;Email:&lt;/label&gt;<br>
+                            &lt;input type="email" id="email" name="email" required&gt;<br>
+                            &lt;br&gt;<br>
+                            &lt;label for="message"&gt;Message:&lt;/label&gt;<br>
+                            &lt;textarea id="message" n<br>ame="message" rows="4" cols="50" required&gt;&lt;/textarea&gt;<br>
+                            &lt;br&gt;
+                            &lt;button type="submit"&gt;Submit&lt;/button&gt;<br>
+                            &lt;/form&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;<br>
+                        </code>
+                    </div>
+
+                    <!-- ------------------------------------------------------------------------------------------------------------------------------------------ -->
+                    <div id="codeexpalin1">
+                        <div id="content1">
+                            <h3 class="h3tag">This is result</h3>
+                        </div>
+
+                        <code>
+                            <!DOCTYPE html>
+                            <html>
+                            <head>
+                                <title>Form Example</title>
+                            </head>
+                            <body>
+                                <form action="/submit_form.php" method="post">
+                                    <label for="name">Name:</label>
+                                    <input type="text" id="name" name="name" required>
+                                    <br>
+                                    <label for="email">Email:</label>
+                                    <input type="email" id="email" name="email" required>
+                                    <br>
+                                    <label for="message">Message:</label>
+                                    <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+                                    <br>
+                                    <button type="submit">Submit</button>
+                                </form>
+                            </body>
+                            </html>
+                        </code>
+                    </div>
+
+                </div>
+                <h3>Explanation:</h3>
+
+                <p>
+                    In this example, we have a simple HTML form. The `&lt;form&gt;` tag is the container for all the
+                    form elements. The
+                    `action` attribute is set to "/submit_form.php," indicating that the form data will be sent to the
+                    specified PHP script
+                    for processing when the form is submitted.
+                </p><br>
+
+                <p>Within the form, we have three input fields: a text field for the user's name, an email field for the
+                    user's email
+                    address, and a textarea for the user to enter a message. Each input field is associated with a
+                    `&lt;label&gt;` tag using
+                    the `for` attribute, which improves accessibility.
+                
+
+                
+                    The `required` attribute is added to each input field to make them mandatory, meaning the user must
+                    fill in these fields
+                    before the form can be submitted.
+                </p><br>
+
+                <p>
+                    Finally, we have a submit button created using the `&lt;button&gt;` tag with `type="submit"`. When
+                    the user clicks this
+                    button, the form data is submitted to the specified URL (in this case, the PHP script) for further
+                    processing.
+                
+
+            
+                    Forms are fundamental for interactive websites and applications, allowing users to provide input and
+                    interact with the
+                    website. They play a crucial role in collecting user data, user authentication, search
+                    functionality, and more.
+                    Understanding how to use form elements correctly enables developers to create userfriendly and
+                    dynamic web applications.
+                </p><br>
+
+
+            </div>
+            <h2 id="h2tag">if  you want to learn more html tag <a href="../index.html"><button class="button" ><span>click</span></button></a></h2>
+
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2021 www.pranay.com</footer>
+    </footer>
+
+</body>
+
+</html>
